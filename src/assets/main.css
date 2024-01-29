@@ -1,0 +1,81 @@
+@font-face {
+  font-family: "Italic";
+  src: url("../assets/fonts/ofont.ru_Montserra.ttf") format("opentype");
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Italic';
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  max-height: auto;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  overflow-x: hidden;
+
+  font-weight: normal;
+  background-color: #86b3ac;
+  background-image: url("data:image/svg+xml,%3Csvg width='300' height='300' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%233d866e' fill-opacity='1' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+#app {
+  width: 80%;
+  min-height: 100vh;
+  max-height: auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  padding-top: 20px;
+
+  background-color: white;
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+  color: rgb(8, 114, 8);
+  cursor: pointer;
+}
+
+a:hover {
+  color: #4fc5b5;
+  text-decoration: underline #4fc5b5;
+}
+
+button {
+  cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  body {
+    width: 767px;
+    min-height: fit-content;
+    max-height: fit-content;
+    flex-direction: column;
+  }
+
+  #app {
+    width: 80%;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-top: 20px;
+  }
+}
